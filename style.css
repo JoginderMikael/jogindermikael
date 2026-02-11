@@ -84,6 +84,21 @@ ul {
     min-height: 74px;
 }
 
+.scroll-progress-track {
+    background: rgba(34, 49, 73, 0.7);
+    height: 3px;
+    width: 100%;
+}
+
+.scroll-progress-bar {
+    background: linear-gradient(90deg, var(--brand), var(--accent));
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.08s linear;
+    width: 100%;
+}
+
 .brand {
     font-family: "DM Serif Display", serif;
     font-size: 1.5rem;
