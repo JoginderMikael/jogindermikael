@@ -206,27 +206,6 @@ h1 {
     color: #dfe6f1;
 }
 
-.quick-facts {
-    background: rgba(16, 26, 42, 0.75);
-    border: 1px solid rgba(34, 49, 73, 0.9);
-    border-radius: 18px;
-    margin-top: 2.1rem;
-    padding: 1rem 1.2rem;
-}
-
-.quick-facts li {
-    color: var(--muted);
-    margin: 0.35rem 0;
-}
-
-.quick-facts strong {
-    color: #f3f7ff;
-}
-
-.quick-facts a {
-    color: var(--brand);
-}
-
 .section {
     padding: 4.8rem 0;
 }
@@ -265,6 +244,68 @@ section p {
     margin-top: 1.4rem;
 }
 
+.skills-snapshot {
+    margin-top: 2rem;
+}
+
+.snapshot-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.snapshot-grid {
+    display: grid;
+    gap: 1.2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.skill-category {
+    background: var(--surface-soft);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    padding: 1.1rem;
+}
+
+.skill-category h4 {
+    color: #dfe8f6;
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+}
+
+.skill-items {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.skill-item {
+    background: rgba(13, 22, 36, 0.85);
+    border: 1px solid rgba(34, 49, 73, 0.85);
+    border-radius: 10px;
+    padding: 0.7rem 0.75rem;
+}
+
+.skill-name {
+    color: #d3deef;
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.45rem;
+}
+
+.skill-bar {
+    background: #1d2c43;
+    border-radius: 999px;
+    height: 7px;
+    overflow: hidden;
+}
+
+.skill-bar .fill {
+    background: linear-gradient(90deg, var(--brand), var(--accent));
+    border-radius: 999px;
+    height: 100%;
+}
+
 .card {
     background: var(--surface);
     border: 1px solid var(--line);
@@ -289,11 +330,67 @@ section p {
     background: linear-gradient(180deg, #121f32 0%, #0f1828 100%);
 }
 
-.stack {
-    color: var(--brand);
-    font-size: 0.87rem;
-    font-weight: 700;
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
     margin-bottom: 0.8rem;
+}
+
+.project-tech span {
+    background: #182841;
+    border: 1px solid #2a4164;
+    border-radius: 999px;
+    color: #bcd6f7;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.2rem 0.62rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 0.9rem;
+    margin-top: 0.8rem;
+}
+
+.project-links a {
+    color: #d8e6fb;
+    font-size: 0.84rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.project-links a:hover {
+    color: var(--accent);
+}
+
+.experience-skills {
+    margin-top: 0.75rem;
+}
+
+.experience-skills-title {
+    color: #c8d9f0;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.45rem;
+    text-transform: uppercase;
+}
+
+.experience-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.42rem;
+}
+
+.experience-tech span {
+    background: #182841;
+    border: 1px solid #2a4164;
+    border-radius: 999px;
+    color: #bdd7f9;
+    font-size: 0.74rem;
+    font-weight: 700;
+    padding: 0.2rem 0.58rem;
 }
 
 .timeline-wrap {
@@ -354,6 +451,43 @@ section p {
     text-align: center;
 }
 
+.footer-links {
+    display: grid;
+    gap: 0.7rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.footer-link {
+    align-items: center;
+    background: rgba(16, 26, 42, 0.75);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    color: #cfdbeb;
+    display: flex;
+    font-size: 0.85rem;
+    gap: 0.5rem;
+    min-height: 40px;
+    padding: 0.48rem 0.65rem;
+}
+
+.footer-link svg {
+    fill: var(--brand);
+    flex: 0 0 15px;
+    height: 15px;
+    width: 15px;
+}
+
+.footer-link span {
+    overflow-wrap: anywhere;
+}
+
+.footer-link:not(.footer-location):hover {
+    border-color: #365177;
+    color: #e6eefb;
+}
+
 .reveal {
     opacity: 0;
     transform: translateY(30px);
@@ -370,7 +504,9 @@ section p {
     .timeline-wrap,
     .split-panels,
     .skills-grid,
-    .projects-grid {
+    .projects-grid,
+    .snapshot-grid,
+    .footer-links {
         grid-template-columns: 1fr;
     }
 }
