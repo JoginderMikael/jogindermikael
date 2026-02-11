@@ -1,167 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Java Spring Boot Developer</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Michael Mwalimu Kasike | Enterprise Java Full-Stack Engineer</title>
+    <meta name="description" content="Enterprise Java and Full-Stack Software Engineer specializing in Spring Boot, secure backend architecture, and modern React frontends.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="bg-orb bg-orb-one" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb-two" aria-hidden="true"></div>
 
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">DevPortfolio.</a>
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
+    <header class="topbar">
+        <div class="container topbar-content">
+            <a class="brand" href="#home">Michael Mwalimu</a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
+            <nav class="nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <section id="hero" class="hero-section">
-        <div class="container hero-content">
-            <span class="greeting">Hello, I'm a</span>
-            <h1 class="headline">Java Spring Boot & <br> React Developer</h1>
-            <p class="subheadline">
-                Specializing in building robust enterprise applications with
-                <strong>Spring Boot, Hibernate, JPA</strong> and modern front-ends with <strong>React</strong>.
+    <main id="home">
+        <section class="hero container reveal">
+            <p class="kicker">Enterprise Java | Full-Stack Software Engineer</p>
+            <h1>MICHAEL MWALIMU KASIKE</h1>
+            <p class="hero-summary">
+                Enterprise developer focused on secure Spring Boot backends, modern React frontends, and scalable system design.
             </p>
-            <div class="cta-group">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#projects">View Projects</a>
+                <a class="btn btn-secondary" href="#contact">Contact Me</a>
             </div>
-        </div>
-        <div class="hero-background"></div>
-    </section>
+            <ul class="quick-facts">
+                <li><strong>Email:</strong> <a href="mailto:mwalimumichael737@gmail.com">mwalimumichael737@gmail.com</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/JoginderMikael" target="_blank" rel="noreferrer">github.com/JoginderMikael</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/michael-mwalimu-22b690167/" target="_blank" rel="noreferrer">linkedin.com/in/michael-mwalimu-22b690167/</a></li>
+                <li><strong>Location:</strong> Kitui, Eastern Kenya | Open to Remote &amp; Relocation</li>
+            </ul>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="about" class="section skills-section">
+        <section id="about" class="section reveal">
+            <div class="container two-col">
+                <div>
+                    <p class="section-tag">Professional Summary</p>
+                    <h2>Enterprise engineering with practical delivery</h2>
+                </div>
+                <p>
+                    I build enterprise-grade applications with clean architecture, REST APIs, role-based security, and reliable full-stack integration. Strong in Java, Spring Boot, PostgreSQL, React, and real-time systems.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="section reveal">
+            <div class="container">
+                <p class="section-tag">Core Technical Skills</p>
+                <h2>Core skills at a glance</h2>
+                <div class="skills-grid">
+                    <article class="card">
+                        <h3>Backend / Enterprise Development</h3>
+                        <ul>
+                            <li>Java (Java 8+), Spring Boot</li>
+                            <li>Spring Data JPA, Hibernate (ORM)</li>
+                            <li>Spring Security (JWT, role-based access control)</li>
+                            <li>RESTful API design and system integration</li>
+                            <li>Microservice-ready architecture</li>
+                            <li>PostgreSQL, MySQL</li>
+                            <li>Clean Architecture and SOLID principles</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Frontend / Full-Stack</h3>
+                        <ul>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React.js</li>
+                            <li>CSS3, Bootstrap, Tailwind CSS</li>
+                            <li>Responsive UI and component-based design</li>
+                            <li>API consumption and state management</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Real-Time and Advanced Systems</h3>
+                        <ul>
+                            <li>WebSockets and real-time collaboration</li>
+                            <li>Concurrent systems and synchronization</li>
+                            <li>Document editing and versioning systems</li>
+                            <li>PDF processing and online editors</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Cloud, DevOps and Tools</h3>
+                        <ul>
+                            <li>Git and GitHub</li>
+                            <li>Cloud-ready application design (AWS/GCP concepts)</li>
+                            <li>CI/CD fundamentals</li>
+                            <li>Docker fundamentals</li>
+                            <li>Secure application deployment</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>AI and Modern Tech Exposure</h3>
+                        <ul>
+                            <li>AI-ready backend integration concepts</li>
+                            <li>Intelligent system extensibility (recommendation and automation hooks)</li>
+                        </ul>
+                    </article>
+                    <article class="card">
+                        <h3>Other</h3>
+                        <ul>
+                            <li>Technical writing and documentation</li>
+                            <li>Research and system analysis</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section reveal">
+            <div class="container">
+                <p class="section-tag">Key Projects (Enterprise-Level)</p>
+                <h2>Selected projects</h2>
+                <div class="projects-grid">
+                    <article class="card project">
+                        <h3>University Management System (Enterprise Application)</h3>
+                        <p class="stack">Java, Spring Boot, Spring Data JPA, Hibernate, PostgreSQL, Spring Security, React</p>
+                        <ul>
+                            <li>Full university platform for academic and admin workflows.</li>
+                            <li>Secure role-based APIs for Admin, Lecturer, and Student.</li>
+                            <li>Scalable architecture with optimized persistence.</li>
+                        </ul>
+                    </article>
+                    <article class="card project">
+                        <h3>Real-Time Collaborative Editor (Google Docs/Notion-like)</h3>
+                        <p class="stack">Java Spring Boot, WebSockets, PostgreSQL, React</p>
+                        <ul>
+                            <li>Live multi-user editing with low-latency updates.</li>
+                            <li>Conflict handling, sessions, and document versioning.</li>
+                            <li>React collaboration UI over WebSocket backend.</li>
+                        </ul>
+                    </article>
+                    <article class="card project">
+                        <h3>Online PDF Editor</h3>
+                        <p class="stack">Java, Spring Boot, React, PDF processing libraries</p>
+                        <ul>
+                            <li>Web PDF platform for view, edit, and export flows.</li>
+                            <li>Secure file processing, storage, and transformation services.</li>
+                            <li>Fast React UI optimized for usability.</li>
+                        </ul>
+                    </article>
+                    <article class="card project">
+                        <h3>Secure API Gateway & Auth Service</h3>
+                        <p class="stack">Java, Spring Boot, Spring Security, JWT, PostgreSQL, Docker</p>
+                        <ul>
+                            <li>Centralized authentication and token-based access control.</li>
+                            <li>Role-based authorization and protected service routing.</li>
+                            <li>Microservice-ready gateway design for enterprise APIs.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section reveal">
+            <div class="container timeline-wrap">
+                <div>
+                    <p class="section-tag">Professional Experience</p>
+                    <h2>Professional experience</h2>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <h3>Freelance Enterprise Java / Full-Stack Developer</h3>
+                        <p class="period">2024 - Present</p>
+                        <ul>
+                            <li>Designed and developed enterprise-grade backend systems using Spring Boot.</li>
+                            <li>Built secure APIs using Spring Security and JWT authentication.</li>
+                            <li>Implemented ORM-based persistence layers with Hibernate and JPA.</li>
+                            <li>Developed full-stack applications integrating Java backend with React frontend.</li>
+                            <li>Focused on performance optimization, scalability, and clean code practices.</li>
+                        </ul>
+                    </article>
+                    <article class="timeline-item">
+                        <h3>IT Department - Machakos County Headquarters (Industrial Attachment)</h3>
+                        <p class="period">2020</p>
+                        <ul>
+                            <li>Supported enterprise IT systems, troubleshooting, and system maintenance.</li>
+                            <li>Assisted in data management and system operations.</li>
+                            <li>Collaborated with IT teams in real-world enterprise environments.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section reveal">
+            <div class="container split-panels">
+                <article class="panel">
+                    <p class="section-tag">Education</p>
+                    <h3>Bachelor of Science - Mathematics &amp; Computer Science</h3>
+                    <p>Maseno University | 2017 - 2021</p>
+                    <p>Second Class Upper Division</p>
+                </article>
+                <article class="panel">
+                    <p class="section-tag">Strengths</p>
+                    <ul>
+                        <li>Enterprise system design and backend architecture</li>
+                        <li>Full-stack development mindset</li>
+                        <li>Real-time system engineering</li>
+                        <li>Secure application development</li>
+                        <li>Strong problem-solving and analytical skills</li>
+                        <li>Excellent technical communication</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section reveal contact">
+            <div class="container">
+                <p class="section-tag">Contact</p>
+                <h2>Open to enterprise and remote opportunities</h2>
+                <p>Email me for backend, full-stack, and system architecture roles.</p>
+                <a class="btn btn-primary" href="mailto:mwalimumichael737@gmail.com">mwalimumichael737@gmail.com</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <div class="container">
-            <h2 class="section-title">Technical Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Backend Development</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">Java</span>
-                            <div class="skill-bar">
-                                <div class="fill" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Spring Boot</span>
-                            <div class="skill-bar">
-                                <div class="fill" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Hibernate / JPA</span>
-                            <div class="skill-bar">
-                                <div class="fill" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Spring AI</span>
-                            <div class="skill-bar">
-                                <div class="fill" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">RESTful APIs</span>
-                            <div class="skill-bar">
-                                <div class="fill" style="width: 90%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Frontend Development</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">React JS</span>
-                            <div class="skill-bar">
-                                <div class="fill" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">HTML5 & CSS3</span>
-                            <div class="skill-bar">
-                                <div class="fill" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">JavaScript (ES6+)</span>
-                            <div class="skill-bar">
-                                <div class="fill" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p>Michael Mwalimu Kasike | Enterprise Java and Full-Stack Software Engineer</p>
         </div>
-    </section>
+    </footer>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section projects-section">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">University Management System</h3>
-                        <p class="project-description">
-                            A comprehensive enterprise solution for managing university operations. Handles student
-                            enrollment, faculty management, course scheduling, and grading systems.
-                        </p>
-                        <div class="project-tech">
-                            <span>Java</span>
-                            <span>Spring Boot</span>
-                            <span>Hibernate</span>
-                            <span>React</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#">View Code</a>
-                            <a href="#">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Task Management Application</h3>
-                        <p class="project-description">
-                            A productivity tool designed to streamline workflow. Features include real-time task
-                            updates, team collaboration tools, and progress tracking dashboards.
-                        </p>
-                        <div class="project-tech">
-                            <span>Spring MVC</span>
-                            <span>JPA</span>
-                            <span>MySQL</span>
-                            <span>React</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#">View Code</a>
-                            <a href="#">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <script src="script.js"></script>
 </body>
-
 </html>
