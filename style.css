@@ -287,6 +287,63 @@ section p {
     font-size: 1rem;
     margin-bottom: 0.9rem;
 }
+.expertise-accordion .skill-category {
+    padding: 0;
+    overflow: hidden;
+}
+
+.skill-toggle {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.1rem;
+    text-align: left;
+    width: 100%;
+}
+
+.skill-toggle h4 {
+    margin-bottom: 0;
+}
+
+.skill-chevron {
+    border-bottom: 2px solid var(--accent);
+    border-right: 2px solid var(--accent);
+    display: inline-block;
+    height: 9px;
+    margin-left: 0.8rem;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+    width: 9px;
+}
+
+.skill-accordion-item.open .skill-chevron {
+    transform: rotate(225deg);
+}
+
+.skill-panel {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: height 0.45s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s ease;
+}
+
+.skill-panel-inner {
+    padding: 0 1.1rem 1rem;
+}
+
+.skill-accordion-item.open .skill-panel {
+    opacity: 1;
+}
+
+.skill-accordion-item .skill-toggle:hover,
+.skill-accordion-item .skill-toggle:focus-visible {
+    background: rgba(24, 40, 65, 0.6);
+    outline: none;
+}
 
 .skill-items {
     display: grid;
@@ -553,3 +610,4 @@ section p {
         padding-top: 3.8rem;
     }
 }
+
