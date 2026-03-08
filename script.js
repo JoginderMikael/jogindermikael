@@ -114,6 +114,44 @@ window.addEventListener("resize", () => {
 });
 
 const carousels = document.querySelectorAll("[data-carousel]");
+const lightbox = document.querySelector("#image-lightbox");
+const lightboxImage = lightbox ? lightbox.querySelector(".lightbox-image") : null;
+const lightboxClose = lightbox ? lightbox.querySelector(".lightbox-close") : null;
+
+const openLightbox = (src, alt) => {
+    if (!lightbox || !lightboxImage) return;
+    lightboxImage.src = src;
+    lightboxImage.alt = alt || "Expanded project screenshot";
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+};
+
+const closeLightbox = () => {
+    if (!lightbox || !lightboxImage) return;
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+    lightboxImage.src = "";
+    document.body.style.overflow = "";
+};
+
+if (lightboxClose) {
+    lightboxClose.addEventListener("click", closeLightbox);
+}
+
+if (lightbox) {
+    lightbox.addEventListener("click", (event) => {
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+    });
+}
+
+window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && lightbox && lightbox.classList.contains("open")) {
+        closeLightbox();
+    }
+});
 
 carousels.forEach((carousel) => {
     const slides = carousel.querySelectorAll(".project-carousel-slide");
@@ -159,6 +197,12 @@ carousels.forEach((carousel) => {
             showNext();
         }
     }, { passive: true });
+
+    slides.forEach((slide) => {
+        slide.addEventListener("click", () => {
+            openLightbox(slide.src, slide.alt);
+        });
+    });
 
     showSlide(currentIndex);
 });
