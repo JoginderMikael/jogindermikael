@@ -285,6 +285,36 @@ section p {
     margin-top: 1.4rem;
 }
 
+.skills-list {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 1.4rem;
+}
+
+.skills-list-item {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1.15rem 1.2rem;
+}
+
+.skills-list-item h3 {
+    color: var(--ink);
+    font-size: 1rem;
+    margin-bottom: 0.35rem;
+}
+
+.skills-list-item p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+.skills-details-hidden {
+    display: none;
+}
+
 .skills-snapshot {
     margin-top: 2rem;
 }
@@ -883,7 +913,8 @@ section p {
     .skills-grid,
     .projects-grid,
     .snapshot-grid,
-    .footer-links {
+    .footer-links,
+    .skills-list {
         grid-template-columns: 1fr;
     }
 }
