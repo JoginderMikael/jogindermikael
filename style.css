@@ -350,6 +350,62 @@ h1 {
     padding-top: 1.2rem;
 }
 
+.projects-heading {
+    align-items: center;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.projects-heading .section-label {
+    margin-bottom: 0;
+}
+
+.project-scroll-controls {
+    display: flex;
+    gap: 0.45rem;
+}
+
+.project-scroll-btn {
+    align-items: center;
+    background: rgb(2 13 23 / 72%);
+    border: 1px solid rgb(156 174 186 / 32%);
+    border-radius: 7px;
+    color: var(--mk-text);
+    cursor: pointer;
+    display: inline-flex;
+    height: 36px;
+    justify-content: center;
+    transition: background 180ms ease, border-color 180ms ease, color 180ms ease, opacity 180ms ease;
+    width: 36px;
+}
+
+.project-scroll-btn svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+.project-scroll-btn:first-child svg {
+    transform: rotate(180deg);
+}
+
+.project-scroll-btn:hover {
+    background: rgb(255 87 40 / 12%);
+    border-color: var(--mk-orange);
+    color: var(--mk-orange);
+}
+
+.project-scroll-btn:disabled {
+    cursor: default;
+    opacity: 0.38;
+}
+
+.project-scroll-btn:disabled:hover {
+    background: rgb(2 13 23 / 72%);
+    border-color: rgb(156 174 186 / 32%);
+    color: var(--mk-text);
+}
+
 .section-label {
     align-items: center;
     color: var(--mk-cyan);
@@ -480,9 +536,19 @@ h1 {
 }
 
 .projects-grid {
-    display: grid;
+    display: flex;
     gap: 0.75rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 0.75rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding-bottom: 0.45rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.projects-grid::-webkit-scrollbar {
+    display: none;
 }
 
 .project-card,
@@ -497,11 +563,13 @@ h1 {
 
 .project-card {
     display: grid;
+    flex: 0 0 min(610px, calc((100% - 0.75rem) / 2));
     gap: 1rem;
     grid-template-columns: minmax(230px, 0.95fr) minmax(220px, 1fr);
     min-height: 176px;
     overflow: hidden;
     padding: 0.65rem;
+    scroll-snap-align: start;
 }
 
 .project-preview {
@@ -809,9 +877,12 @@ h1 {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
-    .projects-grid,
     .lower-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        flex-basis: min(620px, 86vw);
     }
 
     .experience-panel,
@@ -894,6 +965,7 @@ h1 {
     }
 
     .project-card {
+        flex-basis: min(520px, 88vw);
         grid-template-columns: 1fr;
     }
 

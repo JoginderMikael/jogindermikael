@@ -76,7 +76,8 @@
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <a class="cv-link" href="#contact">
+            <a class="cv-link" href="java-portfolio-assets/cv/MICHAEL KASIKE CV UPDATED.pdf"
+                download="Michael-M-Kasike-CV.pdf">
                 <svg aria-hidden="true">
                     <use href="java-portfolio-assets/vectors/icons.svg#icon-download"></use>
                 </svg>
@@ -230,10 +231,26 @@ public class OrderService {
         </section>
 
         <section class="projects-section reveal" id="projects" aria-labelledby="projects-title">
-            <div class="section-label">
-                <span id="projects-title">Selected Projects</span>
+            <div class="projects-heading">
+                <div class="section-label">
+                    <span id="projects-title">Selected Projects</span>
+                </div>
+                <div class="project-scroll-controls" aria-label="Project carousel controls">
+                    <button class="project-scroll-btn" type="button" data-project-scroll="left"
+                        aria-label="Scroll projects left">
+                        <svg aria-hidden="true">
+                            <use href="java-portfolio-assets/vectors/icons.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                    <button class="project-scroll-btn" type="button" data-project-scroll="right"
+                        aria-label="Scroll projects right">
+                        <svg aria-hidden="true">
+                            <use href="java-portfolio-assets/vectors/icons.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
-            <div class="projects-grid">
+            <div class="projects-grid" data-project-track>
                 <article class="project-card project-card-wide">
                     <img class="project-preview" src="java-portfolio-assets/images/patient-dashboard.png"
                         alt="Patient management dashboard preview">
@@ -273,6 +290,30 @@ public class OrderService {
                         </div>
                         <a class="case-link" href="https://github.com/JoginderMikael" target="_blank"
                             rel="noopener noreferrer">
+                            View Case Study
+                            <svg aria-hidden="true">
+                                <use href="java-portfolio-assets/vectors/icons.svg#icon-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-wide">
+                    <img class="project-preview" src="images/uni-management-system/admin-site.jpg"
+                        alt="University Management System admin dashboard preview">
+                    <div class="project-copy">
+                        <h2>University Management System</h2>
+                        <p>Enterprise university platform for academic, student, lecturer and admin workflows with
+                            secure role-based access.</p>
+                        <div class="tag-list">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>Hibernate</span>
+                            <span>REST APIs</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a class="case-link" href="https://github.com/JoginderMikael/University-Management-System"
+                            target="_blank" rel="noopener noreferrer">
                             View Case Study
                             <svg aria-hidden="true">
                                 <use href="java-portfolio-assets/vectors/icons.svg#icon-arrow"></use>
@@ -355,7 +396,7 @@ public class OrderService {
     </a>
 
     <footer class="footer shell">
-        <p>&copy; 2024 Michael M. Kasike. All rights reserved.</p>
+        <p>&copy; <span id="current-year">2024</span> Michael M. Kasike. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

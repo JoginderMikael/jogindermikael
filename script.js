@@ -1,6 +1,13 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav");
 const backToTop = document.querySelector(".back-to-top");
+const currentYear = document.querySelector("#current-year");
+const projectTrack = document.querySelector("[data-project-track]");
+const projectScrollButtons = document.querySelectorAll("[data-project-scroll]");
+
+if (currentYear) {
+    currentYear.textContent = String(new Date().getFullYear());
+}
 
 if (menuToggle && nav) {
     menuToggle.addEventListener("click", () => {
@@ -46,3 +53,39 @@ const updateBackToTop = () => {
 
 window.addEventListener("scroll", updateBackToTop, { passive: true });
 updateBackToTop();
+
+if (projectTrack && projectScrollButtons.length) {
+    const getScrollDistance = () => {
+        const firstCard = projectTrack.querySelector(".project-card");
+        if (!firstCard) return projectTrack.clientWidth;
+
+        const styles = window.getComputedStyle(projectTrack);
+        const gap = parseFloat(styles.columnGap || styles.gap || "0");
+        return firstCard.getBoundingClientRect().width + gap;
+    };
+
+    const updateProjectButtons = () => {
+        const maxScroll = projectTrack.scrollWidth - projectTrack.clientWidth;
+        const atStart = projectTrack.scrollLeft <= 2;
+        const atEnd = projectTrack.scrollLeft >= maxScroll - 2;
+
+        projectScrollButtons.forEach((button) => {
+            const direction = button.dataset.projectScroll;
+            button.disabled = direction === "left" ? atStart : atEnd;
+        });
+    };
+
+    projectScrollButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const direction = button.dataset.projectScroll === "left" ? -1 : 1;
+            projectTrack.scrollBy({
+                left: direction * getScrollDistance(),
+                behavior: "smooth"
+            });
+        });
+    });
+
+    projectTrack.addEventListener("scroll", updateProjectButtons, { passive: true });
+    window.addEventListener("resize", updateProjectButtons);
+    updateProjectButtons();
+}
