@@ -900,6 +900,7 @@ h1 {
     .header-inner {
         grid-template-columns: 1fr auto;
         min-height: 58px;
+        position: relative;
     }
 
     .menu-toggle {
@@ -914,9 +915,12 @@ h1 {
         display: none;
         flex-direction: column;
         gap: 0.8rem;
-        grid-column: 1 / -1;
-        justify-self: stretch;
+        left: 0;
         padding: 0.85rem;
+        position: absolute;
+        right: 0;
+        top: calc(100% + 0.45rem);
+        z-index: 30;
     }
 
     .nav.open {
