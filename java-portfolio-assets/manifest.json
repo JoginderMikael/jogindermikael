@@ -1,0 +1,26 @@
+{
+  "name": "MK.DEV Java Portfolio Assets",
+  "version": "1.0.0",
+  "palette": {
+    "background": "#031421",
+    "backgroundDeep": "#020D17",
+    "surface": "#071B2A",
+    "border": "#294052",
+    "text": "#F4F1EC",
+    "muted": "#9CAEBA",
+    "orange": "#FF5728",
+    "cyan": "#43C7FF",
+    "green": "#39CF86"
+  },
+  "assets": [
+    {"path":"images/hero-portrait.png","use":"Hero portrait"},
+    {"path":"images/patient-dashboard.png","use":"Patient project preview"},
+    {"path":"images/ride-dashboard.png","use":"Ride-hailing project preview"},
+    {"path":"vectors/logo.svg","use":"Portfolio wordmark"},
+    {"path":"vectors/architecture-diagram.svg","use":"Hero architecture visual"},
+    {"path":"vectors/background-grid.svg","use":"Repeatable background texture"},
+    {"path":"vectors/icons.svg","use":"Custom SVG symbol sprite"},
+    {"path":"styles/tokens.css","use":"CSS design tokens"},
+    {"path":"reference/portfolio-mockup.png","use":"Approved visual reference"}
+  ]
+}

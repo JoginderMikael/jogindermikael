@@ -4,40 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Mwalimu Kasike | Enterprise Java Full-Stack Engineer</title>
+    <title>Mikael Kasike | Java Software Engineer</title>
     <meta name="description"
-        content="Official website of Michael Mwalimu Kasike, an Enterprise Java and Full-Stack Software Engineer specializing in Spring Boot, secure backend architecture, and React.">
-    <meta name="author" content="Michael Mwalimu Kasike">
+        content="Portfolio of Mikael Kasike, a Java Software Engineer building scalable backend systems, microservices, and reliable digital products.">
+    <meta name="author" content="Mikael Kasike">
     <link rel="canonical" href="https://michaelmwalimu.top/">
     <meta property="og:type" content="profile">
-    <meta property="og:title" content="Michael Mwalimu Kasike | Enterprise Java Full-Stack Engineer">
+    <meta property="og:title" content="Mikael Kasike | Java Software Engineer">
     <meta property="og:description"
-        content="The official portfolio of Michael Mwalimu Kasike, Enterprise Java and Full-Stack Software Engineer.">
+        content="Backend-focused Java portfolio featuring Spring Boot, microservices, PostgreSQL, Kafka, Docker, and AWS projects.">
     <meta property="og:url" content="https://michaelmwalimu.top/">
-    <meta property="og:site_name" content="Michael Mwalimu Kasike">
-    <meta property="profile:first_name" content="Michael">
-    <meta property="profile:last_name" content="Mwalimu Kasike">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Michael Mwalimu Kasike | Enterprise Java Full-Stack Engineer">
+    <meta property="og:site_name" content="MK.DEV">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mikael Kasike | Java Software Engineer">
     <meta name="twitter:description"
-        content="The official portfolio of Michael Mwalimu Kasike, Enterprise Java and Full-Stack Software Engineer.">
+        content="Backend-focused Java Software Engineer building scalable systems and reliable products.">
     <link rel="me" href="https://github.com/JoginderMikael">
     <link rel="me" href="https://linkedin.com/in/michael-mwalimu-22b690167/">
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "Person",
-            "name": "Michael Mwalimu Kasike",
-            "alternateName": "Michael Mwalimu",
+            "name": "Mikael Kasike",
+            "alternateName": "Michael Mwalimu Kasike",
             "url": "https://michaelmwalimu.top/",
-            "jobTitle": "Enterprise Java and Full-Stack Software Engineer",
-            "description": "Enterprise Java and Full-Stack Software Engineer specializing in Spring Boot, secure backend architecture, and React.",
+            "jobTitle": "Java Software Engineer",
+            "description": "Java Software Engineer specializing in Spring Boot, microservices, PostgreSQL, Kafka, Docker, AWS, and reliable backend architecture.",
             "email": "mailto:mwalimumichael737@gmail.com",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Kitui",
-                "addressCountry": "KE"
-            },
             "sameAs": [
                 "https://github.com/JoginderMikael",
                 "https://linkedin.com/in/michael-mwalimu-22b690167/"
@@ -45,372 +38,295 @@
             "knowsAbout": [
                 "Java",
                 "Spring Boot",
-                "Spring Security",
-                "React",
+                "Microservices",
                 "PostgreSQL",
-                "REST APIs",
-                "Software architecture"
+                "Kafka",
+                "Docker",
+                "AWS",
+                "REST APIs"
             ]
         }
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="java-portfolio-assets/styles/tokens.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="bg-orb bg-orb-one" aria-hidden="true"></div>
-    <div class="bg-orb bg-orb-two" aria-hidden="true"></div>
-
-    <header class="topbar">
-        <div class="container topbar-content">
-            <a class="brand" href="#home">Michael Mwalimu</a>
-            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <header class="site-header">
+        <div class="shell header-inner">
+            <a class="brand" href="#home" aria-label="MK.DEV home">
+                <img src="java-portfolio-assets/vectors/logo.svg" alt="MK.DEV">
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <nav class="nav">
+            <nav class="nav" aria-label="Primary navigation">
                 <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
                 <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
             </nav>
-        </div>
-        <div class="scroll-progress-track" aria-hidden="true">
-            <div class="scroll-progress-bar"></div>
+            <a class="cv-link" href="#contact">
+                <svg aria-hidden="true">
+                    <use href="java-portfolio-assets/vectors/icons.svg#icon-download"></use>
+                </svg>
+                <span>Download CV</span>
+            </a>
         </div>
     </header>
 
-    <main id="home">
-        <section class="hero container reveal">
-            <p class="kicker">Enterprise Java | Full-Stack Software Engineer</p>
-            <h1>MICHAEL MWALIMU</h1>
-            <p class="hero-summary">
-                Enterprise developer focused on secure Spring Boot backends, modern React frontends, scalable system
-                design, and AI-assisted delivery workflows.
-            </p>
-            <div class="hero-actions">
-                <a class="btn btn-primary" href="#projects">View Projects</a>
-                <a class="btn btn-secondary" href="#contact">Contact Me</a>
-            </div>
-        </section>
-
-        <section id="about" class="section reveal">
-            <div class="container two-col">
-                <div>
-                    <p class="section-tag">Professional Summary</p>
-                    <h2>Enterprise engineering with practical delivery</h2>
-                </div>
-                <p>
-                    I build enterprise-grade applications with clean architecture, REST APIs, role-based security, and
-                    reliable full-stack integration. Strong in Java, Spring Boot, PostgreSQL, React, real-time systems,
-                    and practical AI integration for development and product workflows.
+    <main id="home" class="page-shell shell">
+        <section class="hero-grid reveal" id="about" aria-label="Introduction">
+            <div class="hero-copy">
+                <p class="terminal-pill">
+                    <span aria-hidden="true">/&gt;</span>
+                    Backend focused. Systems minded.
                 </p>
-            </div>
-        </section>
-
-        <section id="skills" class="section reveal">
-            <div class="container">
-                <p class="section-tag">Core Technical Skills</p>
-                <h2>Tools I use to build reliable products</h2>
-                <div class="skills-list" aria-label="Core technical skills">
-                    <div class="skills-list-item">
-                        <h3>Backend</h3>
-                        <p>Java, Spring Boot, Spring Security, REST APIs, Hibernate/JPA</p>
-                    </div>
-                    <div class="skills-list-item">
-                        <h3>Frontend</h3>
-                        <p>React, Flutter, JavaScript, HTML, CSS, responsive interface design</p>
-                    </div>
-                    <div class="skills-list-item">
-                        <h3>Data &amp; systems</h3>
-                        <p>PostgreSQL, MySQL, WebSockets, system design, performance optimization</p>
-                    </div>
-                    <div class="skills-list-item">
-                        <h3>Delivery</h3>
-                        <p>Git, GitHub, Docker fundamentals, CI/CD fundamentals, technical documentation</p>
-                    </div>
+                <h1>Hi, I'm Mikael Kasike</h1>
+                <p class="role">Java Software Engineer</p>
+                <p class="hero-summary">I build scalable backend systems and reliable digital products.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects">
+                        <svg aria-hidden="true">
+                            <use href="java-portfolio-assets/vectors/icons.svg#icon-code"></use>
+                        </svg>
+                        <span>View My Work</span>
+                    </a>
+                    <a class="btn btn-secondary" href="#contact">
+                        <svg aria-hidden="true">
+                            <use href="java-portfolio-assets/vectors/icons.svg#icon-chat"></use>
+                        </svg>
+                        <span>Let's Talk</span>
+                    </a>
                 </div>
             </div>
+
+            <figure class="portrait-card">
+                <img src="java-portfolio-assets/images/hero-portrait.png" alt="Portrait of Mikael Kasike">
+            </figure>
+
+            <aside class="systems-panel" aria-label="Architecture focus">
+                <pre><code>@Service
+public class OrderService {
+  private final OrderRepo repo;
+
+  public Order create(Order req) {
+    // validate
+    // persist
+    // publish event
+    return repo.save(req);
+  }
+}</code></pre>
+                <img src="java-portfolio-assets/vectors/architecture-diagram.svg"
+                    alt="API gateway and microservices architecture diagram">
+            </aside>
         </section>
 
-        <section id="projects" class="section reveal">
-            <div class="container">
-                <p class="section-tag">Key Projects (Enterprise-Level)</p>
-                <h2>Selected projects</h2>
-                <div class="projects-grid">
-                    <article class="card project">
-                        <div class="project-image project-image-carousel">
-                            <div class="project-carousel" data-carousel>
-                                <div class="project-carousel-track">
-                                    <img src="images/uni-management-system/admin-site.jpg"
-                                        alt="University Management System admin dashboard screenshot" loading="lazy"
-                                        class="project-carousel-slide active">
-                                    <img src="images/uni-management-system/student-site.jpg"
-                                        alt="University Management System student portal screenshot" loading="lazy"
-                                        class="project-carousel-slide">
-                                </div>
-                                <button class="project-carousel-btn prev" type="button"
-                                    aria-label="Previous project image">&#10094;</button>
-                                <button class="project-carousel-btn next" type="button"
-                                    aria-label="Next project image">&#10095;</button>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>University Management System</h3>
-                            <p class="project-subtitle">Enterprise Application</p>
-                            <div class="project-tech">
-                                <span>Java</span>
-                                <span>Spring Boot</span>
-                                <span>Hibernate</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <ul>
-                                <li>Full university platform for academic and admin workflows.</li>
-                                <li>Secure role-based APIs for Admin, Lecturer, and Student.</li>
-                                <li>Scalable architecture with optimized persistence.</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="https://github.com/JoginderMikael/UN-Management-System-FrontEnd"
-                                    target="_blank" rel="noopener noreferrer" class="project-link"><span>Frontend
-                                        Repo</span></a>
-                                <a href="https://github.com/JoginderMikael/University-Management-System.git"
-                                    target="_blank" rel="noopener noreferrer" class="project-link"><span>Backend
-                                        Repo</span></a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="card project">
-                        <div class="project-image">
-                            <svg viewBox="0 0 400 250" aria-hidden="true">
-                                <defs>
-                                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#79d2c8" stop-opacity="0.3" />
-                                        <stop offset="100%" stop-color="#4da3ff" stop-opacity="0.1" />
-                                    </linearGradient>
-                                </defs>
-                                <rect width="400" height="250" fill="url(#grad2)" />
-                                <text x="200" y="125" text-anchor="middle" dy="0.3em" font-size="18" font-weight="bold"
-                                    fill="#4da3ff" opacity="0.4">Patient Management System</text>
-                            </svg>
-                        </div>
-                        <div class="project-content">
-                            <h3>Patient Management System</h3>
-                            <p class="project-subtitle">Healthcare Application</p>
-                            <div class="project-tech">
-                                <span>Java</span>
-                                <span>Spring Boot</span>
-                                <span>PostgreSQL</span>
-                                <span>React</span>
-                            </div>
-                            <ul>
-                                <li>Digital platform for organizing patient and healthcare workflows.</li>
-                                <li>Structured application experience for managing healthcare information.</li>
-                                <li>Responsive frontend integrated with a Java backend.</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="https://github.com/JoginderMikael/PatientManagementServices" target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="project-link"><span>View Code</span></a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="card project">
-                        <div class="project-image">
-                            <svg viewBox="0 0 400 250" aria-hidden="true">
-                                <defs>
-                                    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#ff9a4d" stop-opacity="0.3" />
-                                        <stop offset="100%" stop-color="#79d2c8" stop-opacity="0.1" />
-                                    </linearGradient>
-                                </defs>
-                                <rect width="400" height="250" fill="url(#grad3)" />
-                                <text x="200" y="125" text-anchor="middle" dy="0.3em" font-size="18" font-weight="bold"
-                                    fill="#ff9a4d" opacity="0.4">Ride Hailing App</text>
-                            </svg>
-                        </div>
-                        <div class="project-content">
-                            <h3>Ride Hailing App</h3>
-                            <p class="project-subtitle">Mobility Application</p>
-                            <div class="project-tech">
-                                <span>Java</span>
-                                <span>Spring Boot</span>
-                                <span>Flutter</span>
-                                <span>React</span>
-                            </div>
-                            <ul>
-                                <li>Application concept for connecting passengers with drivers.</li>
-                                <li>Designed around trip requests, driver coordination, and ride workflows.</li>
-                                <li>Mobile-focused experience supported by a Java backend.</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="https://github.com/JoginderMikael" target="_blank" rel="noopener noreferrer"
-                                    class="project-link"><span>View Code</span></a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="card project">
-                        <div class="project-image">
-                            <div class="project-placeholder" aria-hidden="true">Secure API Gateway &amp; Auth Service
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Secure API Gateway &amp; Auth Service</h3>
-                            <p class="project-subtitle">Spring Security Authentication</p>
-                            <div class="project-tech">
-                                <span>Java</span>
-                                <span>Spring Boot</span>
-                                <span>Spring Security</span>
-                                <span>JWT</span>
-                            </div>
-                            <ul>
-                                <li>Authentication and authorization service for protected APIs.</li>
-                                <li>JWT-based access control with role-based permissions.</li>
-                                <li>Designed as a secure gateway foundation for backend services.</li>
-                            </ul>
-                            <div class="project-links">
-                                <a href="https://github.com/JoginderMikael/AuthForge" target="_blank" rel="noopener noreferrer"
-                                    class="project-link"><span>View Code</span></a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section reveal section-experience">
-            <div class="container timeline-wrap">
+        <section class="proof-strip reveal" aria-label="Engineering strengths">
+            <article>
+                <svg aria-hidden="true">
+                    <use href="java-portfolio-assets/vectors/icons.svg#icon-shield"></use>
+                </svg>
                 <div>
-                    <p class="section-tag">Professional Experience</p>
-                    <h2>Professional experience</h2>
+                    <h2>Reliable</h2>
+                    <p>Production-ready systems</p>
                 </div>
-                <div class="timeline timeline-vertical">
-                    <article class="timeline-item">
-                        <h3>Freelance Enterprise Java / Full-Stack Developer</h3>
-                        <p class="period">2024 - Present</p>
-                        <ul>
-                            <li>Designed and developed enterprise-grade backend systems using Spring Boot.</li>
-                            <li>Built secure APIs using Spring Security and JWT authentication.</li>
-                            <li>Implemented ORM-based persistence layers with Hibernate and JPA.</li>
-                            <li>Developed full-stack applications integrating Java backend with React frontend.</li>
-                            <li>Focused on performance optimization, scalability, clean code practices, and
-                                AI-accelerated delivery.</li>
-                        </ul>
-                        <div class="experience-skills">
-                            <p class="experience-skills-title">Skills Gained</p>
-                            <div class="experience-tech">
-                                <span>Enterprise Architecture</span>
-                                <span>API Security (JWT/RBAC)</span>
-                                <span>Performance Optimization</span>
-                                <span>System Scalability</span>
-                                <span>Full-Stack Integration</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <h3>IT Department - Machakos County Headquarters (Industrial Attachment)</h3>
-                        <p class="period">2020</p>
-                        <ul>
-                            <li>Supported enterprise IT systems, troubleshooting, and system maintenance.</li>
-                            <li>Assisted in data management and system operations.</li>
-                            <li>Collaborated with IT teams in real-world enterprise environments.</li>
-                        </ul>
-                        <div class="experience-skills">
-                            <p class="experience-skills-title">Skills Gained</p>
-                            <div class="experience-tech">
-                                <span>IT Support Operations</span>
-                                <span>System Troubleshooting</span>
-                                <span>Team Collaboration</span>
-                                <span>Data Management</span>
-                                <span>Enterprise Environment Exposure</span>
-                            </div>
-                        </div>
-                    </article>
+            </article>
+            <article>
+                <svg aria-hidden="true">
+                    <use href="java-portfolio-assets/vectors/icons.svg#icon-chart"></use>
+                </svg>
+                <div>
+                    <h2>Scalable</h2>
+                    <p>Built for growth</p>
                 </div>
-            </div>
+            </article>
+            <article>
+                <svg aria-hidden="true">
+                    <use href="java-portfolio-assets/vectors/icons.svg#icon-code"></use>
+                </svg>
+                <div>
+                    <h2>Maintainable</h2>
+                    <p>Clean, tested, documented</p>
+                </div>
+            </article>
+            <article>
+                <svg aria-hidden="true">
+                    <use href="java-portfolio-assets/vectors/icons.svg#icon-user"></use>
+                </svg>
+                <div>
+                    <h2>Impactful</h2>
+                    <p>Solving real problems</p>
+                </div>
+            </article>
         </section>
 
-        <section id="education" class="section reveal">
-            <div class="container split-panels">
-                <article class="panel">
-                    <p class="section-tag">Education</p>
-                    <h3>Bachelor of Science - Mathematics &amp; Computer Science</h3>
-                    <p>Maseno University | 2017 - 2021</p>
-                    <p>Second Class Upper Division</p>
+        <section class="tech-section reveal" id="skills" aria-labelledby="tech-title">
+            <div class="section-label">
+                <span id="tech-title">Tech Stack</span>
+            </div>
+            <div class="tech-grid">
+                <article class="tech-card">
+                    <span class="tech-mark java-mark">Java</span>
+                    <strong>Java 21</strong>
                 </article>
-                <article class="panel">
-                    <p class="section-tag">Strengths</p>
-                    <ul>
-                        <li>Enterprise system design and backend architecture</li>
-                        <li>Full-stack development mindset</li>
-                        <li>Real-time system engineering</li>
-                        <li>Secure application development</li>
-                        <li>Strong problem-solving and analytical skills</li>
-                        <li>Excellent technical communication</li>
-                    </ul>
+                <article class="tech-card">
+                    <span class="tech-mark spring-mark">S</span>
+                    <strong>Spring Boot</strong>
+                </article>
+                <article class="tech-card">
+                    <span class="tech-mark service-mark">MS</span>
+                    <strong>Microservices</strong>
+                </article>
+                <article class="tech-card">
+                    <span class="tech-mark db-mark">PG</span>
+                    <strong>PostgreSQL</strong>
+                </article>
+                <article class="tech-card">
+                    <span class="tech-mark kafka-mark">K</span>
+                    <strong>Kafka</strong>
+                </article>
+                <article class="tech-card">
+                    <span class="tech-mark docker-mark">D</span>
+                    <strong>Docker</strong>
+                </article>
+                <article class="tech-card">
+                    <span class="tech-mark aws-mark">aws</span>
+                    <strong>AWS</strong>
                 </article>
             </div>
         </section>
 
-        <section id="contact" class="section reveal contact">
-            <div class="container">
-                <p class="section-tag">Contact</p>
-                <h2>Open to enterprise and remote opportunities</h2>
-                <p>Email me for backend, full-stack, and system architecture roles.</p>
-                <a class="btn btn-primary" href="mailto:mwalimumichael737@gmail.com">mwalimumichael737@gmail.com</a>
+        <section class="projects-section reveal" id="projects" aria-labelledby="projects-title">
+            <div class="section-label">
+                <span id="projects-title">Selected Projects</span>
             </div>
+            <div class="projects-grid">
+                <article class="project-card project-card-wide">
+                    <img class="project-preview" src="java-portfolio-assets/images/patient-dashboard.png"
+                        alt="Patient management dashboard preview">
+                    <div class="project-copy">
+                        <h2>Patient Management Platform</h2>
+                        <p>Microservices-based platform for hospitals to manage patients, appointments, billing and
+                            reports.</p>
+                        <div class="tag-list">
+                            <span>Microservices</span>
+                            <span>Kafka</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                            <span>AWS</span>
+                        </div>
+                        <a class="case-link" href="https://github.com/JoginderMikael/PatientManagementServices"
+                            target="_blank" rel="noopener noreferrer">
+                            View Case Study
+                            <svg aria-hidden="true">
+                                <use href="java-portfolio-assets/vectors/icons.svg#icon-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-wide ride-card">
+                    <img class="project-preview" src="java-portfolio-assets/images/ride-dashboard.png"
+                        alt="Ride hailing dashboard preview">
+                    <div class="project-copy">
+                        <h2>Ride-Hailing Platform</h2>
+                        <p>Real-time ride booking platform with live tracking, payments and driver management.</p>
+                        <div class="tag-list">
+                            <span>Real-time Location</span>
+                            <span>Redis</span>
+                            <span>PostgreSQL</span>
+                            <span>Spring Boot</span>
+                            <span>React</span>
+                        </div>
+                        <a class="case-link" href="https://github.com/JoginderMikael" target="_blank"
+                            rel="noopener noreferrer">
+                            View Case Study
+                            <svg aria-hidden="true">
+                                <use href="java-portfolio-assets/vectors/icons.svg#icon-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="lower-grid reveal">
+            <article class="experience-panel" id="experience">
+                <div class="section-label">
+                    <span>Experience</span>
+                </div>
+                <h2>Building dependable systems from API to deployment.</h2>
+                <div class="timeline">
+                    <article>
+                        <span>2021 - Present</span>
+                        <h3>Java Software Engineer</h3>
+                        <p>Building scalable backend services, event-driven architectures and APIs.</p>
+                    </article>
+                    <article>
+                        <span>2019 - 2021</span>
+                        <h3>Backend Developer</h3>
+                        <p>Developed REST APIs, integrated third-party services and optimized performance.</p>
+                    </article>
+                    <article>
+                        <span>2017 - 2019</span>
+                        <h3>Software Developer</h3>
+                        <p>Built web applications and internal tools using Java and modern frameworks.</p>
+                    </article>
+                </div>
+            </article>
+
+            <article class="skills-panel" aria-label="Specialized skills">
+                <ul>
+                    <li>RESTful API Design</li>
+                    <li>Domain-Driven Design</li>
+                    <li>Event-Driven Architecture</li>
+                    <li>CI/CD &amp; DevOps</li>
+                    <li>Test-Driven Development</li>
+                </ul>
+            </article>
+
+            <article class="contact-panel" id="contact">
+                <svg class="send-icon" aria-hidden="true">
+                    <use href="java-portfolio-assets/vectors/icons.svg#icon-send"></use>
+                </svg>
+                <div>
+                    <h2>Let's build something reliable.</h2>
+                    <p>Open to new opportunities and interesting projects. Let's connect!</p>
+                    <div class="contact-actions">
+                        <a class="btn btn-primary btn-small" href="mailto:mwalimumichael737@gmail.com">
+                            <svg aria-hidden="true">
+                                <use href="java-portfolio-assets/vectors/icons.svg#icon-mail"></use>
+                            </svg>
+                            <span>Let's Talk</span>
+                        </a>
+                        <a class="btn btn-dark btn-small" href="https://linkedin.com/in/michael-mwalimu-22b690167/"
+                            target="_blank" rel="noopener noreferrer">
+                            <span class="linkedin-mark">in</span>
+                            <span>Connect on LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
 
-    <div class="image-lightbox" id="image-lightbox" aria-hidden="true">
-        <button class="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
-        <img class="lightbox-image" src="" alt="Expanded project screenshot">
-    </div>
+    <a class="back-to-top" href="#home" aria-label="Back to top">
+        <svg aria-hidden="true">
+            <use href="java-portfolio-assets/vectors/icons.svg#icon-arrow"></use>
+        </svg>
+    </a>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-links">
-                <a class="footer-link" href="mailto:mwalimumichael737@gmail.com" aria-label="Email Michael Mwalimu">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M3 6h18v12H3V6zm2.2 1.5L12 12.2l6.8-4.7H5.2z"></path>
-                    </svg>
-                    <span>mwalimumichael737@gmail.com</span>
-                </a>
-                <a class="footer-link" href="https://github.com/JoginderMikael" target="_blank"
-                    rel="noopener noreferrer" aria-label="GitHub profile">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                            d="M12 .7a11.3 11.3 0 0 0-3.6 22c.6.1.8-.3.8-.6v-2.2c-3.2.7-3.8-1.4-3.8-1.4-.5-1.4-1.2-1.8-1.2-1.8-1-.7.1-.7.1-.7 1.1.1 1.8 1.1 1.8 1.1 1 .1 1.7-.7 2.1-1 .1-.8.4-1.3.7-1.6-2.6-.3-5.4-1.3-5.4-5.8 0-1.3.5-2.4 1.1-3.3-.1-.3-.5-1.5.1-3.1 0 0 .9-.3 3.4 1.3a11.2 11.2 0 0 1 6.2 0c2.4-1.6 3.4-1.3 3.4-1.3.6 1.6.2 2.8.1 3.1.7.9 1.1 2 1.1 3.3 0 4.5-2.8 5.5-5.4 5.8.4.4.8 1.2.8 2.4v3.5c0 .3.2.7.8.6A11.3 11.3 0 0 0 12 .7z">
-                        </path>
-                    </svg>
-                    <span>Github</span>
-                </a>
-                <a class="footer-link" href="https://linkedin.com/in/michael-mwalimu-22b690167/" target="_blank"
-                    rel="noopener noreferrer" aria-label="LinkedIn profile">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                            d="M4.9 3.5a2.4 2.4 0 1 1 0 4.9 2.4 2.4 0 0 1 0-4.9zM2.8 9h4.1v12H2.8V9zm7 0h4v1.6h.1c.6-1.1 2-1.9 4.1-1.9 4.4 0 5.2 2.9 5.2 6.6V21h-4.1v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21H9.8V9z">
-                        </path>
-                    </svg>
-                    <span>Linkedin</span>
-                </a>
-                <div class="footer-link footer-location" aria-label="Location">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path
-                            d="M12 2.5A7.5 7.5 0 0 0 4.5 10c0 5.3 7.5 11.5 7.5 11.5S19.5 15.3 19.5 10A7.5 7.5 0 0 0 12 2.5zm0 10.1A2.6 2.6 0 1 1 12 7a2.6 2.6 0 0 1 0 5.2z">
-                        </path>
-                    </svg>
-                    <span>Kitui, Eastern Kenya | Open to Remote &amp; Relocation</span>
-                </div>
-            </div>
-            <p>Michael Mwalimu Kasike | Enterprise Java and Full-Stack Software Engineer</p>
-        </div>
+    <footer class="footer shell">
+        <p>&copy; 2024 Mikael Kasike. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
