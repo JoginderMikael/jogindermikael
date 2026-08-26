@@ -402,54 +402,81 @@ h1 {
     overflow-wrap: anywhere;
 }
 
-.tech-mark {
+.tech-icon {
     align-items: center;
+    background: rgb(244 241 236 / 6%);
+    border: 1px solid rgb(156 174 186 / 16%);
     border-radius: 999px;
     display: inline-flex;
     flex: 0 0 40px;
-    font-size: 0.78rem;
-    font-weight: 900;
     height: 40px;
     justify-content: center;
-    line-height: 1;
+    overflow: hidden;
+    padding: 0.38rem;
     width: 40px;
 }
 
-.java-mark {
-    background: rgb(255 87 40 / 12%);
-    color: #ff7447;
+.tech-icon img,
+.tech-icon svg {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
 }
 
-.spring-mark {
-    background: radial-gradient(circle at 32% 32%, #d7ffd4, #74c946 58%, #338629);
-    color: #fff;
+.service-icon {
+    background: rgb(67 199 255 / 11%);
+    border-color: rgb(67 199 255 / 22%);
+    border-radius: 10px;
 }
 
-.service-mark {
-    background: rgb(67 199 255 / 14%);
-    border-radius: 9px;
+.service-icon svg {
+    fill: none;
+    stroke: var(--mk-cyan);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2.3;
+}
+
+.kafka-icon {
+    background: rgb(244 241 236 / 84%);
+}
+
+.kafka-icon img {
+    filter: contrast(1.12);
+}
+
+.aws-icon {
+    background: #fff;
+    border-radius: 8px;
+    padding: 0.26rem;
+}
+
+.aws-icon img {
+    filter: saturate(1.05) contrast(1.12);
+}
+
+.tech-card:nth-child(1) .tech-icon {
+    background: rgb(255 87 40 / 10%);
+    border-color: rgb(255 87 40 / 18%);
+}
+
+.tech-card:nth-child(2) .tech-icon {
+    background: rgb(57 207 134 / 11%);
+    border-color: rgb(57 207 134 / 18%);
+}
+
+.tech-card:nth-child(4) .tech-icon {
+    background: rgb(72 133 186 / 13%);
+    border-color: rgb(72 133 186 / 20%);
+}
+
+.tech-card:nth-child(6) .tech-icon {
+    background: rgb(31 169 230 / 13%);
+    border-color: rgb(31 169 230 / 22%);
+}
+
+.tech-card:nth-child(7) .tech-icon {
     color: var(--mk-cyan);
-}
-
-.db-mark {
-    background: rgb(72 133 186 / 17%);
-    color: #9fd3ff;
-}
-
-.kafka-mark {
-    background: rgb(244 241 236 / 12%);
-    color: var(--mk-text);
-}
-
-.docker-mark {
-    background: rgb(31 169 230 / 18%);
-    color: #37b7ff;
-}
-
-.aws-mark {
-    background: rgb(255 169 55 / 13%);
-    color: #f6a33a;
-    font-size: 1rem;
 }
 
 .projects-grid {
@@ -692,6 +719,18 @@ h1 {
     border-radius: 2px;
     color: #17385b;
     display: inline-flex;
+    font-weight: 900;
+    height: 16px;
+    justify-content: center;
+    line-height: 1;
+    width: 16px;
+}
+
+.x-mark {
+    align-items: center;
+    color: #fff;
+    display: inline-flex;
+    font-size: 0.9rem;
     font-weight: 900;
     height: 16px;
     justify-content: center;
