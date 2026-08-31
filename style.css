@@ -11,7 +11,7 @@ html {
 body {
     background:
         radial-gradient(circle at 17% 22%, rgb(67 199 255 / 8%), transparent 24rem),
-        radial-gradient(circle at 84% 78%, rgb(255 87 40 / 11%), transparent 25rem),
+        radial-gradient(circle at 84% 78%, rgb(23 72 215 / 11%), transparent 25rem),
         linear-gradient(180deg, var(--mk-bg-deep), var(--mk-bg) 42%, #02101b);
     color: var(--mk-text);
     font-family: var(--mk-font-sans);
@@ -94,13 +94,13 @@ button {
 }
 
 .nav a:hover {
-    color: var(--mk-orange);
+    color: var(--mk-logo-blue);
     opacity: 1;
 }
 
 .cv-link {
     align-items: center;
-    border: 1px solid rgb(255 87 40 / 45%);
+    border: 1px solid rgb(23 72 215 / 45%);
     border-radius: var(--mk-radius-sm);
     display: inline-flex;
     gap: 0.55rem;
@@ -119,8 +119,8 @@ button {
 }
 
 .cv-link:hover {
-    background: rgb(255 87 40 / 12%);
-    border-color: var(--mk-orange);
+    background: rgb(23 72 215 / 12%);
+    border-color: var(--mk-logo-blue);
     transform: translateY(-1px);
 }
 
@@ -190,7 +190,7 @@ h1 {
 }
 
 .role {
-    color: var(--mk-orange);
+    color: var(--mk-logo-blue);
     font-size: clamp(1.8rem, 3.2vw, 2.35rem);
     font-weight: 800;
     line-height: 1.18;
@@ -225,14 +225,14 @@ h1 {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--mk-orange), #ff7447);
+    background: linear-gradient(135deg, var(--mk-logo-blue), #3b67e3);
     border: 1px solid rgb(255 255 255 / 10%);
-    box-shadow: 0 14px 28px rgb(255 87 40 / 22%);
+    box-shadow: 0 14px 28px rgb(23 72 215 / 22%);
     color: #fff;
 }
 
 .btn-primary:hover {
-    box-shadow: 0 18px 36px rgb(255 87 40 / 32%);
+    box-shadow: 0 18px 36px rgb(23 72 215 / 32%);
     transform: translateY(-2px);
 }
 
@@ -253,7 +253,7 @@ h1 {
 .portrait-card {
     align-self: stretch;
     background:
-        radial-gradient(circle at 50% 32%, rgb(255 87 40 / 23%), transparent 16rem),
+        radial-gradient(circle at 50% 32%, rgb(23 72 215 / 23%), transparent 16rem),
         linear-gradient(180deg, #0b1722, #081724);
     border: 1px solid rgb(156 174 186 / 42%);
     border-radius: var(--mk-radius-lg);
@@ -390,9 +390,9 @@ h1 {
 }
 
 .project-scroll-btn:hover {
-    background: rgb(255 87 40 / 12%);
-    border-color: var(--mk-orange);
-    color: var(--mk-orange);
+    background: rgb(23 72 215 / 12%);
+    border-color: var(--mk-logo-blue);
+    color: var(--mk-logo-blue);
 }
 
 .project-scroll-btn:disabled {
@@ -510,8 +510,8 @@ h1 {
 }
 
 .tech-card:nth-child(1) .tech-icon {
-    background: rgb(255 87 40 / 10%);
-    border-color: rgb(255 87 40 / 18%);
+    background: rgb(23 72 215 / 10%);
+    border-color: rgb(23 72 215 / 18%);
 }
 
 .tech-card:nth-child(2) .tech-icon {
@@ -620,12 +620,12 @@ h1 {
 }
 
 .tag-list span:nth-child(3n + 2) {
-    border-color: rgb(255 87 40 / 52%);
+    border-color: rgb(23 72 215 / 52%);
 }
 
 .case-link {
     align-items: center;
-    color: var(--mk-orange);
+    color: var(--mk-logo-blue);
     display: inline-flex;
     font-size: 0.85rem;
     font-weight: 700;
@@ -680,7 +680,7 @@ h1 {
 
 .timeline article::before {
     background: var(--mk-bg);
-    border: 2px solid var(--mk-orange);
+    border: 2px solid var(--mk-logo-blue);
     border-radius: 999px;
     content: "";
     height: 8px;
@@ -745,9 +745,9 @@ h1 {
 .contact-panel {
     align-items: center;
     background:
-        radial-gradient(circle at 92% 20%, rgb(255 87 40 / 28%), transparent 13rem),
-        linear-gradient(135deg, rgb(7 27 42 / 95%), rgb(82 31 23 / 92%));
-    border-color: rgb(255 87 40 / 55%);
+        radial-gradient(circle at 92% 20%, rgb(23 72 215 / 28%), transparent 13rem),
+        linear-gradient(135deg, rgb(7 27 42 / 95%), rgb(16 36 94 / 92%));
+    border-color: rgb(23 72 215 / 55%);
     display: grid;
     gap: 1.25rem;
     grid-template-columns: 70px 1fr;
@@ -755,7 +755,7 @@ h1 {
 }
 
 .send-icon {
-    color: var(--mk-orange);
+    color: var(--mk-logo-blue);
     height: 58px;
     width: 58px;
 }
@@ -823,7 +823,7 @@ h1 {
 }
 
 .back-to-top:hover {
-    border-color: var(--mk-orange);
+    border-color: var(--mk-logo-blue);
 }
 
 .footer {

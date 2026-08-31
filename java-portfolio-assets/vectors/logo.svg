@@ -2,7 +2,6 @@
   <title id="title">MK.DEV</title>
   <rect width="210" height="52" fill="none"/>
   <text x="2" y="39" font-family="Inter,Arial,sans-serif" font-size="38" font-weight="800" letter-spacing="-1">
-    <tspan fill="#ff5728">MK.</tspan><tspan fill="#f4f1ec">DEV</tspan>
+    <tspan fill="#1748d7">MK.</tspan><tspan fill="#f4f1ec">DEV</tspan>
   </text>
 </svg>
-
